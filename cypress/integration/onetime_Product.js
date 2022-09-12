@@ -1,3 +1,5 @@
+/// <reference types="cypress"/>
+
 it('Wellnesse regular flow', function(){
     cy.viewport(1700,1200)
     cy.visit('https://wellnesse.com/')
