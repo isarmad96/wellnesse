@@ -22,4 +22,6 @@ jobs:
 
     - name: Build
       run: |
+        npm install
+        npx browserslist@latest --update-db
         npm start
