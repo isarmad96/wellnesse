@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install cypress --save-dev && node_modules//.bin/cypress run"
+    "start": "node_modules//.bin/cypress run"
   
   },
   "keywords": [],
