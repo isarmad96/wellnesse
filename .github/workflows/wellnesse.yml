@@ -20,3 +20,5 @@ jobs:
           wait-on: 'http://localhost:8000'
           wait-on-timeout: 300
           config: defaultCommandTimeout=100000,pageLoadTimeout=100000,watchForFileChanges=false,video=false
+      - name: Install Dependencies
+        run: npm run runtests
