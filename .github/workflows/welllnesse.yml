@@ -1,18 +1,16 @@
 name: NodeJS with Webpack
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  schedule:
+  - cron: '*/6 * * * *'
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
     
     steps:
     - uses: actions/checkout@v3
