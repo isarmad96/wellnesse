@@ -2,7 +2,7 @@ name: NodeJS with Webpack
 
 on:
   schedule:
-  - cron: '*/6 * * * *'
+  - cron: '*/5 * * * *'
 
 jobs:
   build:
